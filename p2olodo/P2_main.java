@@ -1,4 +1,4 @@
-package p2;
+package p2olodo;
 
 public class P2_main {
     public static void main(String[] args) {
