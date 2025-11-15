@@ -26,19 +26,22 @@ public class P3_main {
         System.out.println("Sum: " + sum);
 
         // c
-        double buffer = 0;
-        int indexOffsetI = 1;
-        int indexOffsetJ = 1;
+        int indexI, indexJ;
+        double[][] output = new double[array.length][array[0].length];
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
-                indexOffsetI = array.length -i -1;
-                indexOffsetJ = array[i].length -j -1;
+                indexI = j;
+                indexJ = array[i].length -i -1;
 
-                buffer = array[indexOffsetI][j];
-                //array[i][j] = array[j][i];
-                //array[j][i] = buffer;
+                output[indexI][indexJ] = (int) array[i][j];
+            }
+        }
+        array = output;
 
-                System.out.print(buffer + " ");
+
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                System.out.print((int)array[i][j] + " ");
             }
             System.out.println();
         }
