@@ -9,8 +9,8 @@ public class P1_main {
         
         int x = 0;
         do {
-            x = x + 1;
             System.out.println(x);
-        } while (x<10);
+            x = x + 1;
+        } while (x<=10);
     }
 }
