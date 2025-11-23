@@ -23,7 +23,7 @@ public class P3_main {
                 sum += array[i][j];
             }
         }
-        //System.out.println("Sum: " + sum);
+        System.out.println("Sum: " + sum);
 
         // c
          array = new double[][]{

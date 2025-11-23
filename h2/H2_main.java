@@ -1,6 +1,6 @@
 package h2;
 
-import java.math.pow;
+import java.lang.Math;
 
 public class H2_main {
     public static void main(String[] args) {
